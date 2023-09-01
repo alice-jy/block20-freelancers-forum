@@ -21,16 +21,16 @@ function main() {
     const listUsers = document.createElement('ul');
 
     //loop through the users array creating li elements
-    /* while (users > 0){
-        /
 
-    } */
+    users.forEach( user => {
+        const li = document.getElement('li'); //created ordered list element
+        li.innerHTML = `Name: ${user.name}, Age: ${user.age}, Occupation: ${user.occupation}`; //list the content and append to ul
+        listUsers.appendChild(li);
+    })
 
 
     //append elements to HTML document
-    
-
-
+    document.root.appendChild(listUsers);
 
 }
 
